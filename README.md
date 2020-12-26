@@ -1,10 +1,19 @@
 # JayMatrix
-*Custom ncurses implementation of the cmatrix program, in C*  
+*Custom ncurses implementation of the cmatrix program, in C.*  
 
 ## Building
 A CMakeLists.txt file is given for easy-building. Just use ``cmake`` together with ``make`` and you'll be on your way in no time! Alternatively, here's a single command to just build everything from scratch:  
 ```sh
 gcc -o matrix -lncurses default.c main.c coordinates.c
+```
+
+### CMake + Make
+The easiest way is:  
+```sh
+mkdir bin
+cd bin
+cmake ..
+make matrix
 ```
 
 ## Running
